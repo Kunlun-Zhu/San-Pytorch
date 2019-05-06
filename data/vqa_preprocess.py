@@ -28,6 +28,7 @@ def download_vqa():
   os.system('unzip zip/Annotations_Val_mscoco.zip -d annotations/')
   
   def main(params):
+      print("hello1")
       if params['download'] == 1:
           download_vqa()
       train = []
