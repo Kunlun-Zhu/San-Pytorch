@@ -30,11 +30,6 @@ def download_vqa():
   def main(params):
       if params['download'] == 1:
           download_vqa()
-
-            '''
-            Put the VQA data into single JavaScript Object Notation or json file, where [[Question_id, Image_id, Question, multipleChoice_answer, Answer] ... ]
-            '''
-
       train = []
       test = []
       imdir='%s/COCO_%s_%012d.jpg'
