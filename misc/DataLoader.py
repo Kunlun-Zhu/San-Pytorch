@@ -78,4 +78,4 @@ class CDATA(torch.utils.data.Dataset): # Extend PyTorch's Dataset class
         return self.vocab_size
 
     def getSeqLength(self):
-    return self.seq_length
+        return self.seq_length
