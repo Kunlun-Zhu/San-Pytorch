@@ -8,7 +8,7 @@ class QuestionEmbedding(nn.Module):
     def __init__(self, vocab_size, emb_size, hidden_size, rnn_size, num_layers, dropout, seq_length, use_gpu):
         super(QuestionEmbedding, self).__init__() # Must call super __init__()
 
-	self.use_gpu = use_gpu
+        self.use_gpu = use_gpu
         self.vocab_size = vocab_size
         self.emb_size = emb_size
         self.lookuptable = nn.Linear(vocab_size, emb_size, bias=False)
